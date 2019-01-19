@@ -22,8 +22,8 @@
                 bind(el, binding) {
                     // el.onclick = function() {
                     //     binding.value();    
-                    // }
-                    const type = binding.value.arg;
+                    // } // works
+                    const type = binding.arg;
                     const fn = binding.value;
                     el.addEventListener(type, fn);
                 }
